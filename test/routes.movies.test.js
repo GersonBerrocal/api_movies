@@ -14,8 +14,6 @@ describe('routes - movies', () => {
       request.get('/api/movies').expect(200, done);
     });
     it('should response with the list of movies', function (done) {
-      // eslint-disable-next-line handle-callback-err
-      // eslint-disable-next-line node/handle-callback-err
       request.get('/api/movies').end((err, res) => {
         assert.deepEqual(res.body, {
           data: moviesMock,

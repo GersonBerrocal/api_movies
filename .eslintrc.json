@@ -12,6 +12,7 @@
   },
   "rules": {
     "handle-callback-err": "warn",
+    "node/handle-callback-err": "off",
     "no-console": "warn"
   }
 }
